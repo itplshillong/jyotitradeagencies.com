@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0c1f3a"/>
+    </linearGradient>
+    <linearGradient id="ac" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="liq" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0369A1" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <circle cx="500" cy="60" r="140" fill="#10B981" opacity="0.05"/>
+  <circle cx="100" cy="340" r="100" fill="#0EA5E9" opacity="0.05"/>
+  <!-- Molecular bonds (background) -->
+  <line x1="130" y1="100" x2="180" y2="150" stroke="#10B981" stroke-width="1.5" opacity="0.2"/>
+  <line x1="180" y1="150" x2="150" y2="200" stroke="#10B981" stroke-width="1.5" opacity="0.2"/>
+  <line x1="180" y1="150" x2="230" y2="140" stroke="#10B981" stroke-width="1.5" opacity="0.2"/>
+  <circle cx="130" cy="100" r="6" fill="#10B981" opacity="0.3"/>
+  <circle cx="180" cy="150" r="6" fill="#10B981" opacity="0.3"/>
+  <circle cx="150" cy="200" r="6" fill="#0EA5E9" opacity="0.3"/>
+  <circle cx="230" cy="140" r="6" fill="#0EA5E9" opacity="0.3"/>
+  <!-- Right side molecule -->
+  <line x1="430" y1="80" x2="470" y2="130" stroke="#0EA5E9" stroke-width="1.5" opacity="0.2"/>
+  <line x1="470" y1="130" x2="450" y2="185" stroke="#0EA5E9" stroke-width="1.5" opacity="0.2"/>
+  <line x1="470" y1="130" x2="520" y2="120" stroke="#0EA5E9" stroke-width="1.5" opacity="0.2"/>
+  <circle cx="430" cy="80" r="6" fill="#0EA5E9" opacity="0.3"/>
+  <circle cx="470" cy="130" r="6" fill="#0EA5E9" opacity="0.3"/>
+  <circle cx="450" cy="185" r="6" fill="#10B981" opacity="0.3"/>
+  <circle cx="520" cy="120" r="6" fill="#10B981" opacity="0.3"/>
+  <!-- Erlenmeyer Flask (left) -->
+  <g transform="translate(190,190)">
+    <path d="M -18 -95 L -18 -25 L -70 65 Q -78 82 -60 82 L 60 82 Q 78 82 70 65 L 18 -25 L 18 -95 Z" fill="none" stroke="#10B981" stroke-width="3" opacity="0.8"/>
+    <path d="M -18 -95 L -18 -25 L -70 65 Q -78 82 -60 82 L 60 82 Q 78 82 70 65 L 18 -25 L 18 -95 Z" fill="#10B981" opacity="0.08"/>
+    <!-- Liquid inside -->
+    <path d="M -58 55 Q -78 82 -60 82 L 60 82 Q 78 82 58 55 Z" fill="url(#ac)"/>
+    <!-- Flask neck top cap -->
+    <rect x="-22" y="-100" width="44" height="12" rx="4" fill="#475569"/>
+    <!-- Shine -->
+    <line x1="-10" y1="-90" x2="-30" y2="30" stroke="white" stroke-width="2.5" opacity="0.1"/>
+    <!-- Bubbles -->
+    <circle cx="-20" cy="50" r="5" fill="white" opacity="0.15"/>
+    <circle cx="10" cy="38" r="3.5" fill="white" opacity="0.12"/>
+    <circle cx="25" cy="60" r="4" fill="white" opacity="0.1"/>
+  </g>
+  <!-- Beaker (right) -->
+  <g transform="translate(360,195)">
+    <rect x="-42" y="-85" width="84" height="155" rx="5" fill="none" stroke="#0EA5E9" stroke-width="3" opacity="0.8"/>
+    <rect x="-42" y="-85" width="84" height="155" rx="5" fill="#0EA5E9" opacity="0.06"/>
+    <!-- Liquid -->
+    <rect x="-39" y="30" width="78" height="37" rx="0 0 4 4" fill="url(#liq)"/>
+    <!-- Spout -->
+    <path d="M 38 -85 Q 55 -75 50 -60" fill="none" stroke="#0EA5E9" stroke-width="3" opacity="0.8"/>
+    <!-- Measurement lines -->
+    <line x1="-42" y1="-30" x2="-28" y2="-30" stroke="#0EA5E9" stroke-width="1.5" opacity="0.5"/>
+    <line x1="-42" y1="-10" x2="-28" y2="-10" stroke="#0EA5E9" stroke-width="1.5" opacity="0.5"/>
+    <line x1="-42" y1="10" x2="-28" y2="10" stroke="#0EA5E9" stroke-width="1.5" opacity="0.5"/>
+    <!-- Bubbles in liquid -->
+    <circle cx="-10" cy="50" r="4" fill="white" opacity="0.15"/>
+    <circle cx="15" cy="42" r="3" fill="white" opacity="0.12"/>
+    <circle cx="-22" cy="58" r="3.5" fill="white" opacity="0.1"/>
+    <!-- Shine -->
+    <rect x="-36" y="-80" width="10" height="148" rx="5" fill="white" opacity="0.05"/>
+  </g>
+  <!-- Test tube (far right) -->
+  <g transform="translate(470,180) rotate(18)">
+    <rect x="-10" y="-70" width="20" height="100" rx="10 10 0 0" fill="none" stroke="#38BDF8" stroke-width="2" opacity="0.7"/>
+    <path d="M -10 30 Q -10 48 0 48 Q 10 48 10 30 Z" fill="#38BDF8" opacity="0.6"/>
+    <rect x="-10" y="-72" width="20" height="14" rx="4" fill="#475569"/>
+    <!-- Liquid -->
+    <path d="M -9 10 L 9 10 L 9 30 Q 9 46 0 46 Q -9 46 -9 30 Z" fill="#38BDF8" opacity="0.5"/>
+  </g>
+  <!-- Bottom bar -->
+  <rect x="0" y="322" width="600" height="78" fill="rgba(0,0,0,0.4)"/>
+  <line x1="48" y1="322" x2="552" y2="322" stroke="#10B981" stroke-width="2" opacity="0.55"/>
+  <text x="300" y="357" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">Chemicals</text>
+  <text x="300" y="382" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#10B981" text-anchor="middle" letter-spacing="1">Disinfectants · Reagents · Specialty Compounds</text>
+</svg>

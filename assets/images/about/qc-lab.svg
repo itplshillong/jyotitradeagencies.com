@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0f1a30"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <circle cx="520" cy="70" r="120" fill="#8B5CF6" opacity="0.05"/>
+  <circle cx="80" cy="350" r="80" fill="#10B981" opacity="0.05"/>
+  <!-- Lab bench -->
+  <rect x="30" y="270" width="540" height="20" rx="4" fill="#1E293B"/>
+  <rect x="30" y="286" width="540" height="8" rx="2" fill="#334155" opacity="0.5"/>
+  <!-- Balance scale (left) -->
+  <g transform="translate(125,220)">
+    <!-- Stand -->
+    <rect x="-4" y="-80" width="8" height="100" rx="3" fill="#64748B"/>
+    <rect x="-30" y="18" width="60" height="10" rx="3" fill="#475569"/>
+    <!-- Arm -->
+    <rect x="-55" y="-80" width="110" height="6" rx="3" fill="#94A3B8"/>
+    <circle cx="0" cy="-80" r="6" fill="#64748B"/>
+    <!-- Chains / rods -->
+    <line x1="-55" y1="-74" x2="-55" y2="-44" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="55" y1="-74" x2="55" y2="-44" stroke="#94A3B8" stroke-width="2"/>
+    <!-- Pans -->
+    <ellipse cx="-55" cy="-42" rx="26" ry="8" fill="#64748B"/>
+    <ellipse cx="55" cy="-42" rx="26" ry="8" fill="#64748B"/>
+    <!-- Sample in pan -->
+    <ellipse cx="55" cy="-48" rx="14" ry="5" fill="#10B981" opacity="0.5"/>
+    <ellipse cx="-55" cy="-48" rx="10" ry="4" fill="#0EA5E9" opacity="0.5"/>
+    <!-- Label -->
+    <text y="40" font-family="Arial" font-size="11" fill="#94A3B8" text-anchor="middle">Balance Scale</text>
+  </g>
+  <!-- Microscope (center) -->
+  <g transform="translate(290,220)">
+    <rect x="-55" y="52" width="110" height="18" rx="6" fill="#475569"/>
+    <rect x="-42" y="38" width="84" height="18" rx="4" fill="#475569" opacity="0.9"/>
+    <!-- Vertical arm -->
+    <rect x="-11" y="-90" width="22" height="150" rx="5" fill="#64748B"/>
+    <rect x="-8" y="-86" width="8" height="144" rx="3" fill="white" opacity="0.07"/>
+    <!-- Eyepiece arm -->
+    <path d="M 11 -65 Q 58 -65 58 -22 L 58 14 Q 58 34 36 34 L 11 34" fill="none" stroke="#64748B" stroke-width="18" stroke-linecap="round"/>
+    <!-- Eyepiece -->
+    <rect x="-16" y="-108" width="32" height="28" rx="6" fill="#94A3B8"/>
+    <ellipse cx="0" cy="-108" rx="18" ry="8" fill="#B0BEC5"/>
+    <!-- Objective lens -->
+    <rect x="-14" y="-32" width="28" height="56" rx="10" fill="#475569"/>
+    <ellipse cx="0" cy="24" rx="15" ry="8" fill="#1E293B"/>
+    <ellipse cx="0" cy="24" rx="9" ry="5" fill="#8B5CF6" opacity="0.7"/>
+    <circle cx="0" cy="24" r="3" fill="#C4B5FD" opacity="0.6"/>
+    <!-- Stage -->
+    <rect x="-42" y="30" width="84" height="14" rx="4" fill="#64748B"/>
+    <!-- Sample slide -->
+    <rect x="-22" y="32" width="44" height="10" rx="2" fill="#E2E8F0" opacity="0.3"/>
+    <!-- Knobs -->
+    <circle cx="-24" cy="16" r="9" fill="#8B5CF6" opacity="0.75"/>
+    <circle cx="-24" cy="35" r="7" fill="#7C3AED" opacity="0.7"/>
+    <text y="80" font-family="Arial" font-size="11" fill="#94A3B8" text-anchor="middle">Microscope</text>
+  </g>
+  <!-- Test tube rack (right) -->
+  <g transform="translate(460,215)">
+    <!-- Rack frame -->
+    <rect x="-62" y="-20" width="124" height="16" rx="4" fill="#475569"/>
+    <rect x="-62" y="55" width="124" height="16" rx="4" fill="#475569"/>
+    <rect x="-62" y="-18" width="8" height="90" rx="3" fill="#475569"/>
+    <rect x="54" y="-18" width="8" height="90" rx="3" fill="#475569"/>
+    <!-- 5 test tubes -->
+    <rect x="-48" y="-15" width="18" height="65" rx="9 9 0 0" fill="none" stroke="#E2E8F0" stroke-width="2.5" opacity="0.7"/>
+    <rect x="-48" y="30" width="18" height="20" rx="0 0 9 9" fill="#10B981" opacity="0.7"/>
+    <rect x="-22" y="-15" width="18" height="65" rx="9 9 0 0" fill="none" stroke="#E2E8F0" stroke-width="2.5" opacity="0.7"/>
+    <rect x="-22" y="25" width="18" height="25" rx="0 0 9 9" fill="#0EA5E9" opacity="0.7"/>
+    <rect x="4" y="-15" width="18" height="65" rx="9 9 0 0" fill="none" stroke="#E2E8F0" stroke-width="2.5" opacity="0.7"/>
+    <rect x="4" y="35" width="18" height="15" rx="0 0 9 9" fill="#8B5CF6" opacity="0.7"/>
+    <rect x="30" y="-15" width="18" height="65" rx="9 9 0 0" fill="none" stroke="#E2E8F0" stroke-width="2.5" opacity="0.7"/>
+    <rect x="30" y="28" width="18" height="22" rx="0 0 9 9" fill="#F59E0B" opacity="0.7"/>
+    <!-- Stoppers -->
+    <rect x="-51" y="-20" width="24" height="8" rx="3" fill="#64748B"/>
+    <rect x="-25" y="-20" width="24" height="8" rx="3" fill="#64748B"/>
+    <rect x="1" y="-20" width="24" height="8" rx="3" fill="#64748B"/>
+    <rect x="27" y="-20" width="24" height="8" rx="3" fill="#64748B"/>
+    <text y="88" font-family="Arial" font-size="11" fill="#94A3B8" text-anchor="middle">Sample Rack</text>
+  </g>
+  <!-- Certificate / quality report (wall, left) -->
+  <g transform="translate(60,140)" opacity="0.45">
+    <rect x="-30" y="-55" width="60" height="80" rx="3" fill="#E2E8F0"/>
+    <rect x="-23" y="-45" width="46" height="4" rx="1" fill="#0F172A" opacity="0.5"/>
+    <rect x="-23" y="-35" width="38" height="3" rx="1" fill="#0F172A" opacity="0.4"/>
+    <rect x="-23" y="-25" width="44" height="3" rx="1" fill="#0F172A" opacity="0.4"/>
+    <rect x="-23" y="-15" width="30" height="3" rx="1" fill="#0F172A" opacity="0.35"/>
+    <rect x="-23" y="-5" width="40" height="3" rx="1" fill="#0F172A" opacity="0.35"/>
+    <circle cx="5" cy="15" r="12" fill="#10B981" opacity="0.5"/>
+    <text x="5" y="20" font-family="Arial" font-size="11" fill="white" text-anchor="middle" font-weight="bold">✓</text>
+  </g>
+  <!-- Petri dish -->
+  <g transform="translate(185,270)">
+    <ellipse cx="0" cy="0" rx="26" ry="8" fill="#1E293B" stroke="#475569" stroke-width="2"/>
+    <ellipse cx="0" cy="-2" rx="22" ry="6" fill="#10B981" opacity="0.25"/>
+    <circle cx="-8" cy="-2" r="3" fill="#10B981" opacity="0.4"/>
+    <circle cx="4" cy="-3" r="2" fill="#10B981" opacity="0.35"/>
+    <circle cx="10" cy="-1" r="2.5" fill="#34D399" opacity="0.3"/>
+  </g>
+  <!-- ISO label accent -->
+  <g transform="translate(535,150)" opacity="0.3">
+    <rect x="-30" y="-22" width="60" height="44" rx="6" fill="#0EA5E9"/>
+    <text x="0" y="-5" font-family="Arial" font-size="11" fill="white" text-anchor="middle" font-weight="bold">ISO</text>
+    <text x="0" y="12" font-family="Arial" font-size="9" fill="white" text-anchor="middle">9001:2015</text>
+  </g>
+  <!-- Bottom bar -->
+  <rect x="0" y="322" width="600" height="78" fill="rgba(0,0,0,0.42)"/>
+  <line x1="48" y1="322" x2="552" y2="322" stroke="#10B981" stroke-width="2" opacity="0.55"/>
+  <text x="300" y="357" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">Quality Control</text>
+  <text x="300" y="382" font-family="Arial,Helvetica,sans-serif" font-size="12.5" fill="#6EE7B7" text-anchor="middle" letter-spacing="1">ISO Certified · Precision Testing · Product Integrity</text>
+</svg>

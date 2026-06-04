@@ -1,0 +1,92 @@
+/* ============================================================
+   Admin Panel Styles — Jyoti Trade Agencies
+============================================================ */
+:root {
+  --primary:#0F172A;--secondary:#10B981;--accent:#0EA5E9;
+  --sidebar-w:260px;
+}
+body { font-family:'Inter',sans-serif; background:#F1F5F9; }
+h1,h2,h3,h4,h5,h6 { font-family:'Poppins',sans-serif; }
+
+/* Sidebar */
+.admin-sidebar {
+  width:var(--sidebar-w); min-height:100vh; background:var(--primary);
+  position:fixed; top:0; left:0; z-index:1000;
+  transition:all .3s ease; overflow-y:auto;
+}
+.admin-sidebar .sidebar-brand {
+  padding:1.5rem 1.25rem; border-bottom:1px solid rgba(255,255,255,.07);
+  display:flex; align-items:center; gap:.75rem;
+}
+.sidebar-brand-icon { width:38px; height:38px; background:linear-gradient(135deg,var(--secondary),var(--accent)); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#fff; font-size:1rem; }
+.sidebar-brand-name { font-size:.95rem; font-weight:700; color:#fff; }
+.sidebar-brand-sub { font-size:.65rem; color:#64748B; }
+.sidebar-nav { padding:1rem 0; }
+.sidebar-section-label { font-size:.65rem; font-weight:700; text-transform:uppercase; letter-spacing:.1em; color:#475569; padding:.75rem 1.25rem .25rem; }
+.sidebar-link {
+  display:flex; align-items:center; gap:.85rem;
+  padding:.7rem 1.25rem; color:#94A3B8; font-size:.875rem; font-weight:500;
+  transition:all .25s ease; border-left:3px solid transparent;
+}
+.sidebar-link:hover, .sidebar-link.active {
+  color:#fff; background:rgba(255,255,255,.06); border-left-color:var(--secondary);
+}
+.sidebar-link i { width:18px; text-align:center; }
+
+/* Main content */
+.admin-main { margin-left:var(--sidebar-w); min-height:100vh; }
+.admin-topbar {
+  background:#fff; border-bottom:1px solid #E2E8F0;
+  padding:.75rem 1.5rem; display:flex; align-items:center;
+  justify-content:space-between; position:sticky; top:0; z-index:100;
+  box-shadow:0 1px 4px rgba(0,0,0,.06);
+}
+.admin-content { padding:2rem 1.5rem; }
+
+/* Cards */
+.stat-card { background:#fff; border-radius:12px; padding:1.5rem; box-shadow:0 2px 12px rgba(15,23,42,.06); }
+.stat-icon { width:50px; height:50px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.4rem; }
+.stat-icon.green { background:rgba(16,185,129,.12); color:var(--secondary); }
+.stat-icon.blue { background:rgba(14,165,233,.12); color:var(--accent); }
+.stat-icon.purple { background:rgba(139,92,246,.12); color:#8B5CF6; }
+.stat-icon.orange { background:rgba(249,115,22,.12); color:#F97316; }
+.stat-num { font-size:1.8rem; font-weight:700; font-family:'Poppins',sans-serif; color:var(--primary); }
+.stat-label { font-size:.8rem; color:#64748B; }
+
+.admin-card { background:#fff; border-radius:12px; box-shadow:0 2px 12px rgba(15,23,42,.06); }
+.admin-card-header { padding:1.25rem 1.5rem; border-bottom:1px solid #F1F5F9; display:flex; align-items:center; justify-content:space-between; }
+.admin-card-body { padding:1.5rem; }
+
+/* Table */
+.admin-table { width:100%; font-size:.875rem; }
+.admin-table th { background:#F8FAFC; color:#475569; font-weight:600; font-size:.78rem; text-transform:uppercase; letter-spacing:.05em; padding:.85rem 1rem; border-bottom:1px solid #E2E8F0; }
+.admin-table td { padding:.85rem 1rem; border-bottom:1px solid #F1F5F9; vertical-align:middle; }
+.admin-table tr:last-child td { border-bottom:none; }
+.admin-table tr:hover td { background:#FAFBFC; }
+
+/* Badges */
+.badge-active { background:rgba(16,185,129,.1); color:var(--secondary); padding:.25rem .75rem; border-radius:20px; font-size:.75rem; font-weight:600; }
+.badge-inactive { background:rgba(100,116,139,.1); color:#64748B; padding:.25rem .75rem; border-radius:20px; font-size:.75rem; font-weight:600; }
+.badge-unread { background:rgba(234,179,8,.15); color:#B45309; padding:.25rem .75rem; border-radius:20px; font-size:.75rem; font-weight:700; }
+.badge-unread { background:rgba(14,165,233,.1); color:var(--accent); padding:.25rem .75rem; border-radius:20px; font-size:.75rem; font-weight:600; }
+
+/* Forms */
+.form-label { font-weight:600; font-size:.875rem; color:var(--primary); }
+.form-control, .form-select { border:1.5px solid #E2E8F0; border-radius:8px; font-size:.9rem; padding:.6rem .9rem; }
+.form-control:focus, .form-select:focus { border-color:var(--secondary); box-shadow:0 0 0 3px rgba(16,185,129,.1); }
+.btn-primary-admin { background:linear-gradient(135deg,var(--secondary),#059669); color:#fff; border:none; padding:.6rem 1.5rem; border-radius:8px; font-weight:600; transition:all .25s; }
+.btn-primary-admin:hover { transform:translateY(-1px); color:#fff; }
+.btn-danger-admin { background:#FEF2F2; color:#DC2626; border:1px solid #FECACA; padding:.5rem 1rem; border-radius:6px; font-size:.8rem; font-weight:600; }
+.btn-danger-admin:hover { background:#DC2626; color:#fff; }
+.btn-edit-admin { background:#EFF6FF; color:#2563EB; border:1px solid #BFDBFE; padding:.5rem 1rem; border-radius:6px; font-size:.8rem; font-weight:600; }
+.btn-edit-admin:hover { background:#2563EB; color:#fff; }
+
+/* Login */
+.admin-login-wrapper { min-height:100vh; background:linear-gradient(135deg,var(--primary),#1E3A5F); display:flex; align-items:center; justify-content:center; }
+.admin-login-card { background:#fff; border-radius:16px; padding:3rem 2.5rem; width:100%; max-width:420px; box-shadow:0 24px 80px rgba(0,0,0,.25); }
+
+@media(max-width:767px) {
+  .admin-sidebar { transform:translateX(-100%); }
+  .admin-sidebar.open { transform:translateX(0); }
+  .admin-main { margin-left:0; }
+}

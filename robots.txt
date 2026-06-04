@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Block admin panel, config, server-side includes, handlers, vendor
+Disallow: /admin/
+Disallow: /config/
+Disallow: /includes/
+Disallow: /handlers/
+Disallow: /mailer/
+Disallow: /vendor/
+Disallow: /database/
+
+# Sitemap location — UPDATE THIS URL when deploying to production domain
+Sitemap: http://localhost/website/jyotitradeagencies.com/sitemap.xml

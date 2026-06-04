@@ -1,0 +1,37 @@
+Options -Indexes
+
+# Rewrite rules
+RewriteEngine On
+RewriteCond %{HTTPS} off
+# Uncomment below to force HTTPS on production:
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Serve sitemap.xml dynamically via PHP
+RewriteRule ^sitemap\.xml$ sitemap.php [L,QSA]
+
+# Block access to sensitive files
+<FilesMatch "\.(sql|env|log|sh|bak|json|lock)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Disable server signature
+ServerSignature Off
+
+# ── HTTP Security Headers ──────────────────────────────────────────────────────
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), camera=(), microphone=()"
+    # Remove PHP version fingerprint
+    Header always unset X-Powered-By
+</IfModule>
+
+# ── PHP hardening ──────────────────────────────────────────────────────────────
+<IfModule mod_php.c>
+    php_flag display_errors Off
+    php_flag expose_php Off
+    php_flag session.cookie_httponly On
+</IfModule>

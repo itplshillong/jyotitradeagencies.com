@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1a2a3a"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <circle cx="520" cy="60" r="130" fill="#0EA5E9" opacity="0.05"/>
+  <circle cx="80" cy="340" r="90" fill="#10B981" opacity="0.04"/>
+  <!-- Building exterior -->
+  <!-- Main building block -->
+  <rect x="100" y="140" width="300" height="200" fill="#1E293B" opacity="0.9"/>
+  <!-- Building facade lines (windows) -->
+  <!-- Row 1 -->
+  <rect x="120" y="158" width="48" height="36" rx="3" fill="#0EA5E9" opacity="0.6"/>
+  <rect x="182" y="158" width="48" height="36" rx="3" fill="#0EA5E9" opacity="0.5"/>
+  <rect x="244" y="158" width="48" height="36" rx="3" fill="#0EA5E9" opacity="0.65"/>
+  <rect x="306" y="158" width="48" height="36" rx="3" fill="#0EA5E9" opacity="0.45"/>
+  <!-- Row 2 -->
+  <rect x="120" y="206" width="48" height="36" rx="3" fill="#0EA5E9" opacity="0.45"/>
+  <rect x="182" y="206" width="48" height="36" rx="3" fill="#F59E0B" opacity="0.4"/>
+  <rect x="244" y="206" width="48" height="36" rx="3" fill="#0EA5E9" opacity="0.55"/>
+  <rect x="306" y="206" width="48" height="36" rx="3" fill="#0EA5E9" opacity="0.5"/>
+  <!-- Row 3 -->
+  <rect x="120" y="254" width="48" height="36" rx="3" fill="#0EA5E9" opacity="0.4"/>
+  <rect x="182" y="254" width="48" height="36" rx="3" fill="#0EA5E9" opacity="0.5"/>
+  <rect x="244" y="254" width="48" height="36" rx="3" fill="#F59E0B" opacity="0.35"/>
+  <rect x="306" y="254" width="48" height="36" rx="3" fill="#0EA5E9" opacity="0.45"/>
+  <!-- Window reflection lines -->
+  <line x1="132" y1="158" x2="132" y2="194" stroke="white" stroke-width="1" opacity="0.12"/>
+  <line x1="194" y1="158" x2="194" y2="194" stroke="white" stroke-width="1" opacity="0.12"/>
+  <!-- Entrance door -->
+  <rect x="210" y="305" width="80" height="35" rx="3 3 0 0" fill="#10B981" opacity="0.7"/>
+  <rect x="226" y="305" width="22" height="35" fill="#10B981" opacity="0.8"/>
+  <rect x="252" y="305" width="22" height="35" fill="#10B981" opacity="0.7"/>
+  <circle cx="248" cy="323" r="3" fill="white" opacity="0.5"/>
+  <circle cx="258" cy="323" r="3" fill="white" opacity="0.5"/>
+  <!-- Roof top line -->
+  <rect x="95" y="136" width="310" height="8" rx="2" fill="#334155"/>
+  <!-- Signboard -->
+  <rect x="150" y="290" width="200" height="18" rx="3" fill="#0F172A" opacity="0.8"/>
+  <text x="250" y="303" font-family="Arial,Helvetica,sans-serif" font-size="10" fill="#10B981" text-anchor="middle" font-weight="bold">JYOTI TRADE AGENCIES</text>
+  <!-- Side building -->
+  <rect x="400" y="200" width="140" height="140" fill="#162032" opacity="0.7"/>
+  <rect x="410" y="215" width="35" height="28" rx="2" fill="#0EA5E9" opacity="0.4"/>
+  <rect x="456" y="215" width="35" height="28" rx="2" fill="#0EA5E9" opacity="0.35"/>
+  <rect x="410" y="255" width="35" height="28" rx="2" fill="#0EA5E9" opacity="0.3"/>
+  <rect x="456" y="255" width="35" height="28" rx="2" fill="#F59E0B" opacity="0.25"/>
+  <rect x="395" y="196" width="150" height="7" rx="2" fill="#1E293B"/>
+  <!-- Trees -->
+  <g transform="translate(70,285)">
+    <rect x="-5" y="0" width="10" height="30" rx="3" fill="#15803D" opacity="0.5"/>
+    <circle cx="0" cy="-15" r="22" fill="#15803D" opacity="0.4"/>
+    <circle cx="0" cy="-28" r="15" fill="#16A34A" opacity="0.35"/>
+  </g>
+  <g transform="translate(545,285)">
+    <rect x="-5" y="0" width="10" height="28" rx="3" fill="#15803D" opacity="0.5"/>
+    <circle cx="0" cy="-14" r="20" fill="#15803D" opacity="0.35"/>
+    <circle cx="0" cy="-26" r="13" fill="#16A34A" opacity="0.3"/>
+  </g>
+  <!-- Ground / pavement -->
+  <rect x="0" y="335" width="600" height="65" fill="#1E293B" opacity="0.4"/>
+  <rect x="50" y="335" width="500" height="4" fill="#334155" opacity="0.3"/>
+  <!-- Pathway -->
+  <rect x="210" y="339" width="80" height="61" fill="#334155" opacity="0.25"/>
+  <!-- Bottom bar -->
+  <rect x="0" y="322" width="600" height="78" fill="rgba(0,0,0,0.4)"/>
+  <line x1="48" y1="322" x2="552" y2="322" stroke="#0EA5E9" stroke-width="2" opacity="0.5"/>
+  <text x="300" y="357" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">Our Office</text>
+  <text x="300" y="382" font-family="Arial,Helvetica,sans-serif" font-size="12.5" fill="#7DD3FC" text-anchor="middle" letter-spacing="1">State-of-the-Art Business Infrastructure</text>
+</svg>

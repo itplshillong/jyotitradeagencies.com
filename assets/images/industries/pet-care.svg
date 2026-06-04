@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0c1a30"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#bg)"/>
+  <!-- Floor -->
+  <rect x="0" y="255" width="600" height="45" fill="#1E3A5F" opacity="0.2"/>
+  <!-- Dog silhouette -->
+  <g transform="translate(195,148)">
+    <!-- Body -->
+    <ellipse cx="0" cy="25" rx="75" ry="46" fill="#94A3B8" opacity="0.85"/>
+    <!-- Neck -->
+    <rect x="-62" y="-15" width="32" height="35" rx="12" fill="#94A3B8" opacity="0.85"/>
+    <!-- Head -->
+    <ellipse cx="-68" cy="-38" rx="38" ry="32" fill="#94A3B8" opacity="0.85"/>
+    <!-- Snout -->
+    <ellipse cx="-92" cy="-28" rx="18" ry="12" fill="#CBD5E1" opacity="0.88"/>
+    <!-- Nose -->
+    <ellipse cx="-102" cy="-30" rx="6" ry="5" fill="#1E293B"/>
+    <ellipse cx="-100" cy="-32" rx="2" ry="1.5" fill="white" opacity="0.5"/>
+    <!-- Eye -->
+    <circle cx="-58" cy="-46" r="7" fill="#1E293B"/>
+    <circle cx="-56" cy="-48" r="2.5" fill="white"/>
+    <!-- Floppy ear -->
+    <path d="M -50 -62 Q -28 -50 -30 -22 Q -42 -18 -52 -28 Z" fill="#64748B" opacity="0.9"/>
+    <path d="M -82 -60 Q -100 -50 -100 -24 Q -88 -18 -78 -26 Z" fill="#64748B" opacity="0.85"/>
+    <!-- Collar -->
+    <rect x="-82" y="-20" width="36" height="10" rx="4" fill="#0EA5E9" opacity="0.8"/>
+    <circle cx="-64" cy="-13" r="4" fill="#F59E0B" opacity="0.9"/>
+    <!-- Legs -->
+    <rect x="-52" y="66" width="18" height="42" rx="8" fill="#94A3B8" opacity="0.85"/>
+    <rect x="-26" y="66" width="18" height="42" rx="8" fill="#CBD5E1" opacity="0.8"/>
+    <rect x="22" y="66" width="18" height="42" rx="8" fill="#CBD5E1" opacity="0.8"/>
+    <rect x="48" y="66" width="18" height="42" rx="8" fill="#94A3B8" opacity="0.85"/>
+    <!-- Paws -->
+    <ellipse cx="-43" cy="108" rx="10" ry="6" fill="#94A3B8"/>
+    <ellipse cx="-17" cy="108" rx="10" ry="6" fill="#CBD5E1"/>
+    <ellipse cx="31" cy="108" rx="10" ry="6" fill="#CBD5E1"/>
+    <ellipse cx="57" cy="108" rx="10" ry="6" fill="#94A3B8"/>
+    <!-- Tail (wagging) -->
+    <path d="M 74 18 Q 105 -5 100 22 Q 96 38 108 42" fill="none" stroke="#94A3B8" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <!-- Cat silhouette -->
+  <g transform="translate(380,152)">
+    <!-- Body -->
+    <ellipse cx="0" cy="22" rx="55" ry="42" fill="#C4B5A5" opacity="0.82"/>
+    <!-- Neck -->
+    <rect x="-28" y="-18" width="28" height="30" rx="10" fill="#C4B5A5" opacity="0.82"/>
+    <!-- Head -->
+    <ellipse cx="-22" cy="-42" rx="30" ry="28" fill="#C4B5A5" opacity="0.82"/>
+    <!-- Pointed ears -->
+    <polygon points="-42,-60 -52,-90 -28,-62" fill="#C4B5A5" opacity="0.85"/>
+    <polygon points="-2,-60 8,-88 16,-62" fill="#C4B5A5" opacity="0.85"/>
+    <!-- Inner ear -->
+    <polygon points="-40,-63 -48,-82 -32,-65" fill="#F9A8D4" opacity="0.5"/>
+    <polygon points="-2,-63 6,-80 14,-65" fill="#F9A8D4" opacity="0.5"/>
+    <!-- Eyes (almond) -->
+    <ellipse cx="-32" cy="-46" rx="8" ry="6" fill="#065F46"/>
+    <ellipse cx="-32" cy="-46" rx="3" ry="6" fill="#1E293B"/>
+    <circle cx="-30" cy="-49" r="1.5" fill="white"/>
+    <ellipse cx="-10" cy="-46" rx="8" ry="6" fill="#065F46"/>
+    <ellipse cx="-10" cy="-46" rx="3" ry="6" fill="#1E293B"/>
+    <circle cx="-8" cy="-49" r="1.5" fill="white"/>
+    <!-- Nose -->
+    <polygon points="-21,-34 -16,-34 -18,-30" fill="#F9A8D4"/>
+    <!-- Whiskers -->
+    <line x1="-42" y1="-32" x2="-60" y2="-28" stroke="#CBD5E1" stroke-width="1.5" opacity="0.7"/>
+    <line x1="-42" y1="-36" x2="-62" y2="-36" stroke="#CBD5E1" stroke-width="1.5" opacity="0.7"/>
+    <line x1="-42" y1="-40" x2="-60" y2="-44" stroke="#CBD5E1" stroke-width="1.5" opacity="0.7"/>
+    <line x1="0" y1="-32" x2="18" y2="-28" stroke="#CBD5E1" stroke-width="1.5" opacity="0.7"/>
+    <line x1="0" y1="-36" x2="20" y2="-36" stroke="#CBD5E1" stroke-width="1.5" opacity="0.7"/>
+    <line x1="0" y1="-40" x2="18" y2="-44" stroke="#CBD5E1" stroke-width="1.5" opacity="0.7"/>
+    <!-- Collar -->
+    <rect x="-36" y="-24" width="28" height="9" rx="4" fill="#10B981" opacity="0.8"/>
+    <!-- Legs -->
+    <rect x="-38" y="58" width="14" height="38" rx="7" fill="#C4B5A5" opacity="0.82"/>
+    <rect x="-18" y="58" width="14" height="38" rx="7" fill="#B8A898" opacity="0.8"/>
+    <rect x="8" y="58" width="14" height="38" rx="7" fill="#B8A898" opacity="0.8"/>
+    <rect x="28" y="58" width="14" height="38" rx="7" fill="#C4B5A5" opacity="0.82"/>
+    <!-- Paws -->
+    <ellipse cx="-31" cy="96" rx="9" ry="5" fill="#C4B5A5"/>
+    <ellipse cx="-11" cy="96" rx="9" ry="5" fill="#B8A898"/>
+    <ellipse cx="15" cy="96" rx="9" ry="5" fill="#B8A898"/>
+    <ellipse cx="35" cy="96" rx="9" ry="5" fill="#C4B5A5"/>
+    <!-- Curved tail -->
+    <path d="M 54 18 Q 85 5 88 30 Q 90 52 72 58 Q 55 62 50 50" fill="none" stroke="#C4B5A5" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <!-- Paw prints on floor -->
+  <g transform="translate(100,270)" fill="#0EA5E9" opacity="0.2">
+    <circle cx="0" cy="0" r="7"/>
+    <circle cx="-10" cy="-9" r="4.5"/>
+    <circle cx="0" cy="-12" r="4.5"/>
+    <circle cx="10" cy="-9" r="4.5"/>
+  </g>
+  <g transform="translate(480,272)" fill="#10B981" opacity="0.15">
+    <circle cx="0" cy="0" r="6"/>
+    <circle cx="-9" cy="-8" r="3.5"/>
+    <circle cx="0" cy="-11" r="3.5"/>
+    <circle cx="9" cy="-8" r="3.5"/>
+  </g>
+  <!-- Bottom bar -->
+  <rect x="0" y="238" width="600" height="62" fill="rgba(0,0,0,0.45)"/>
+  <line x1="50" y1="238" x2="550" y2="238" stroke="#0EA5E9" stroke-width="2" opacity="0.55"/>
+  <text x="300" y="267" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">Pet Care</text>
+  <text x="300" y="290" font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#7DD3FC" text-anchor="middle" letter-spacing="0.8">Dogs · Cats · Exotic Pets · Clinics &amp; Hospitals</text>
+</svg>
