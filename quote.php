@@ -7,6 +7,11 @@ $preselectedCategory = isset($_GET['category']) ? htmlspecialchars(strip_tags($_
 $categories = getDB()->query('SELECT name FROM product_categories WHERE is_active=1 ORDER BY sort_order ASC')->fetchAll(PDO::FETCH_COLUMN);
 $defaultCats = ['Veterinary Medicines','Surgical Instruments','Chemicals','Laboratories','Health Care Products'];
 $catList = !empty($categories) ? $categories : $defaultCats;
+
+// Generate math CAPTCHA and store answer in session
+$_captchaA = random_int(2, 9);
+$_captchaB = random_int(1, 9);
+$_SESSION['captcha_answer'] = $_captchaA + $_captchaB;
 ?>
 <?php include __DIR__ . '/includes/header.php'; ?>
 
@@ -95,6 +100,22 @@ $catList = !empty($categories) ? $categories : $defaultCats;
                 <label class="form-label">Requirement Details <span class="text-danger">*</span></label>
                 <textarea name="requirement_details" class="form-control" rows="6" required maxlength="5000"
                   placeholder="Please describe your specific product requirements, specifications, target market, regularity of order, etc."><?= $preselectedCategory ? 'I am interested in: ' . e($preselectedCategory) . "\n\n" : '' ?></textarea>
+              </div>
+              <!-- Math CAPTCHA -->
+              <div class="col-12">
+                <label class="form-label">Security Check <span class="text-danger">*</span></label>
+                <div class="captcha-wrap">
+                  <div class="captcha-question">
+                    <span class="captcha-num"><?= $_captchaA ?></span>
+                    <span class="captcha-op">+</span>
+                    <span class="captcha-num"><?= $_captchaB ?></span>
+                    <span class="captcha-op">=</span>
+                    <span class="captcha-q">?</span>
+                  </div>
+                  <input type="number" name="captcha" class="form-control captcha-input"
+                    placeholder="Your answer" required min="0" max="99" autocomplete="off">
+                </div>
+                <small class="text-muted">Solve the simple math to confirm you're not a robot.</small>
               </div>
               <div class="col-12">
                 <button type="submit" class="btn-submit">

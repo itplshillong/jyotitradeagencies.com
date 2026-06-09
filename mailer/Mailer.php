@@ -21,9 +21,9 @@ use PHPMailer\PHPMailer\Exception;
  */
 function sendMail(string $toEmail, string $toName, string $subject, string $body, string $plainBody = '')
 {
-    $host      = getSetting('smtp_host')        ?: 'smtp.gmail.com';
+    $host      = getSetting('smtp_host')        ?: 'smtp.zoho.in';
     $port      = (int)(getSetting('smtp_port')  ?: 587);
-    $username  = getSetting('smtp_username')    ?: '';
+    $username  = getSetting('smtp_username')    ?: 'contact@jyotitradeagencies.com';
     $password  = getSetting('smtp_password')    ?: '';
     $senderName = getSetting('smtp_sender_name') ?: getSetting('company_name') ?: 'Jyoti Trade Agencies';
 

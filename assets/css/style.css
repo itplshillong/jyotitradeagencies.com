@@ -291,6 +291,19 @@ a { text-decoration: none; transition: var(--transition); }
 /* ── QUOTE PAGE ───────────────────────────── */
 .quote-form-card { background:#fff; border-radius:var(--radius); padding:3rem; box-shadow:var(--shadow); }
 
+/* CAPTCHA */
+.captcha-wrap { display:flex; align-items:center; gap:.75rem; flex-wrap:wrap; }
+.captcha-question {
+  display:inline-flex; align-items:center; gap:.5rem;
+  background:linear-gradient(135deg,rgba(16,185,129,.08),rgba(14,165,233,.08));
+  border:1.5px solid rgba(16,185,129,.25); border-radius:8px;
+  padding:.5rem 1rem; font-family:'Poppins',sans-serif; user-select:none;
+}
+.captcha-num { font-size:1.25rem; font-weight:800; color:var(--primary); }
+.captcha-op  { font-size:1.1rem;  font-weight:700; color:#64748B; }
+.captcha-q   { font-size:1.25rem; font-weight:800; color:var(--secondary); }
+.captcha-input { width:90px !important; text-align:center; font-size:1.1rem; font-weight:700; }
+
 /* ── LEGACY / HERITAGE SECTION ───────────── */
 .legacy-section { padding:6rem 0; background:#F8FAFC; }
 

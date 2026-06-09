@@ -95,11 +95,6 @@ if (!empty($_waNumber)):
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <!-- Custom JS -->
 <script src="<?= SITE_URL ?>/assets/js/main.js"></script>
-<?php
-// Google Analytics / GA4 — output raw script tag stored by admin
-$_gaCode = getSetting('google_analytics');
-if (!empty(trim($_gaCode))): ?>
-<?= $_gaCode ?>
-<?php endif; ?>
+ 
 </body>
 </html>

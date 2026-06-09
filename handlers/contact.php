@@ -15,6 +15,15 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 // CSRF — csrf_verify() calls die() with 403 on failure; no return value needed
 csrf_verify();
 
+// CAPTCHA verification
+$captchaInput  = (int)($_POST['captcha'] ?? -1);
+$captchaAnswer = (int)($_SESSION['captcha_answer_contact'] ?? -999);
+unset($_SESSION['captcha_answer_contact']); // One-time use
+if ($captchaInput !== $captchaAnswer) {
+    echo json_encode(['success' => false, 'message' => 'Incorrect security answer. Please refresh and try again.']);
+    exit;
+}
+
 $name    = sanitize($_POST['name']         ?? '');
 $company = sanitize($_POST['company_name'] ?? '');
 $email   = sanitizeEmail($_POST['email']   ?? '');
@@ -54,7 +63,10 @@ if ($recipient) {
       </table>
       <p style='color:#6b7280;font-size:12px;margin-top:16px'>Received from IP: " . htmlspecialchars($ip) . "</p>
     </div>";
-    sendMail($recipient, $companyName, $subject, $body);
+    $mailResult = sendMail($recipient, $companyName, $subject, $body);
+    if ($mailResult !== true) {
+        error_log('[Jyoti Contact] Mail failed to ' . $recipient . ': ' . $mailResult);
+    }
 }
 
 echo json_encode(['success' => true, 'message' => 'Thank you! Your message has been sent. We will get back to you shortly.']);

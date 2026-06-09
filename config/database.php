@@ -9,7 +9,12 @@ define('DB_USER',    'root');
 define('DB_PASS',    '');
 define('DB_CHARSET', 'utf8mb4');
 
-define('SITE_URL',   'http://localhost/website/jyotitradeagencies.com');
+// Auto-detect URL: on localhost keep the subfolder path; on any live domain use root
+$_siteScheme = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? 'https' : 'http';
+$_siteHost   = $_SERVER['HTTP_HOST'] ?? 'localhost';
+$_sitePath   = ($_siteHost === 'localhost') ? '/website/jyotitradeagencies.com' : '';
+define('SITE_URL', $_siteScheme . '://' . $_siteHost . $_sitePath);
+unset($_siteScheme, $_siteHost, $_sitePath);
 define('SITE_ROOT',  dirname(__DIR__));
 define('UPLOAD_DIR', SITE_ROOT . '/admin/uploads/');
 

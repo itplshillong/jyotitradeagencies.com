@@ -3,6 +3,11 @@ require_once __DIR__ . '/includes/init.php';
 $metaTitle = 'Contact Us - ' . getSetting('company_name');
 $metaDesc  = 'Contact Jyoti Trade Agencies for veterinary product enquiries, quotes and support. We are here to help you.';
 $mapEmbed  = getSetting('map_embed');
+
+// Generate math CAPTCHA and store answer in session
+$_captchaA = random_int(2, 9);
+$_captchaB = random_int(1, 9);
+$_SESSION['captcha_answer_contact'] = $_captchaA + $_captchaB;
 ?>
 <?php include __DIR__ . '/includes/header.php'; ?>
 
@@ -93,6 +98,22 @@ $mapEmbed  = getSetting('map_embed');
               <div class="col-12">
                 <label class="form-label">Message <span class="text-danger">*</span></label>
                 <textarea name="message" class="form-control" rows="5" placeholder="Tell us about your requirement…" required maxlength="3000"></textarea>
+              </div>
+              <!-- Math CAPTCHA -->
+              <div class="col-12">
+                <label class="form-label">Security Check <span class="text-danger">*</span></label>
+                <div class="captcha-wrap">
+                  <div class="captcha-question">
+                    <span class="captcha-num"><?= $_captchaA ?></span>
+                    <span class="captcha-op">+</span>
+                    <span class="captcha-num"><?= $_captchaB ?></span>
+                    <span class="captcha-op">=</span>
+                    <span class="captcha-q">?</span>
+                  </div>
+                  <input type="number" name="captcha" class="form-control captcha-input"
+                    placeholder="0" required min="0" max="99" autocomplete="off">
+                </div>
+                <small class="text-muted">Solve the simple math to confirm you're not a robot.</small>
               </div>
               <div class="col-12">
                 <button type="submit" class="btn-submit">
